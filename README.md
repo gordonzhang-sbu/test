@@ -1,4 +1,127 @@
-# SPRCSE220--GorZhang---117574236-
+Name: Gordon Zhang
+SBU ID: 117574236
 
-# All the function will fails if the input Matrix size is negative
-# For Test(SparseMatrix, zeroSize), the sparse matrix will be incorrect. It will throws some garbage values, if the size of the given matrix is zero 
+For part A, print_star_line function takes in two parameter, (int size, int type), if type is pyramid print an extra space
+All the function assume valid parameter
+
+Test for part A:
+(Type, size)
+Triangle (0), Square (1), Pyramid (2)
+
+(0, 3)
+*
+**
+***
+(0, 5)
+*
+**
+***
+****
+*****
+(0, 0)
+(0,1)
+*
+(0,2)
+*
+**
+
+(1,3)
+***
+***
+***
+(1,0)
+(1,1)
+*
+(1,4)
+****
+****
+****
+****
+(1,2)
+**
+**
+
+(2,0)
+(2,1)
+ *
+(2,2)
+  * 
+ * *
+(2,5)
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+(2,3)
+   * 
+  * * 
+ * * *
+
+
+Test for part B:
+A[] = {1,1,1,1,1,1,1,1,1,1}
+B[] = {1,1,1,1,1,1,1,1,1,1}
+1 1|1 1|1 1|1 1|1 1|1 1|1 1|1 1|1 1|1 1|
+
+A[] = {20,18,16,14,12,10,8,6,4,2}
+B[] = {19,17,15,13,11,9,7,5,3,1}
+19 20|17 18|15 16|13 14|11 12|9 10|7 8|5 6|3 4|1 2|
+
+A[] = {}
+B[] = {}
+
+A[] = {1}
+B[] = {2}
+2 1|
+
+A[] = {1,0,1,0,1,0,1,0,1,0}
+B[] = {1,0,1,0,1,0,1,0,1,0}
+1 1|0 0|1 1|0 0|1 1|0 0|1 1|0 0|1 1|0 0|
+
+Test for part C:
+v[] = {1,2,3,4,5,6,7,8,9,10}
+Sorted Array: 10 9 8 7 6 5 4 3 2 1 
+
+v[] = {0}
+Sorted Array: 0
+
+v[] = {}
+Sorted Array:
+
+v[] = {1,2}
+Sorted Array: 2 1
+
+v[] = {-1,-2,-3,-4,-5,-6,-7,-8,-9,-10}
+Sorted Array: -1 -2 -3 -4 -5 -6 -7 -8 -9 -10
+
+Test for part D:
+A[] = {{0,0,0,0}, {0,0,0,0}, {0,0,0,0}, {0,0,0,0}}
+B[] = {{1,0,0,0}, {0,1,0,0}, {0,0,1,0}, {0,0,0,1}}
+Matrix C: 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+
+A[] = {{1,0,0,0}, {0,1,0,0}, {0,0,1,0}, {0,0,0,1}}
+B[] = {{1,0,0,0}, {0,1,0,0}, {0,0,1,0}, {0,0,0,1}}
+Matrix C: 
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+
+A[] = {}
+B[] = {}
+
+A[] = {{1,2}, {3,4}}
+B[] = {{1,2}, {3,4}}
+Matrix C: 
+7 10 
+15 22 
+
+A[] = {9}
+B[] = {10}
+Matrix C: 
+90 
